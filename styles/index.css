@@ -6,7 +6,7 @@ body{
 div{
 	text-align: column;
 }
-#name {
+#blogSite {
 	    font-family: 'Montez', cursive;
 	    font-size: 35px;
 	    color:blue;
@@ -19,12 +19,12 @@ div{
 .header-buttons{
 	background-color: blue;
 	color:white;
-	padding:5px 10px;
-	margin-left: 5px;
+	padding:7px 15px;
+	margin-left: 3px;
 	font-family: sans-serif;
-	font-size: 15px;
-	font-weight: bold;
+	font-size: 10px;
 	text-align: right;
+	cursor: pointer;
 }
 
 form{
@@ -33,16 +33,100 @@ form{
 	justify-content: center;
 }
 
+#container{
+	height:100vh;
+}
+
 .body-buttons{
 	background-color: #dfc120;
 	color:black;
 	padding:5px 5px;
-	margin-top: 16%;
+	margin-top: 50%;
 	margin-left: 10px;
 	font-family: sans-serif;
 	font-size: 10px;
 	text-align: center;
 	width: 75px;
+	cursor: pointer;
 }
 
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  /*overflow: auto;  Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#getStarted{
+	font-family: sans-serif;
+	font-size: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+input {
+    padding: 10px;
+    outline: none;
+}
+
+.label-text {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+a {
+    font-size: 14px;
+    color: #186CA3;
+    text-decoration: none;
+}
+
+#signup-btn {
+    background-color: green;
+    color:white;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}

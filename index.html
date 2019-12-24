@@ -7,8 +7,6 @@
 	<title>Home Page </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" media="screen" href="./styles/index.css"/>
-	<script type="text/javascript" scr="index.js"></script>
-    
     <!-- TODO: Include Font Awesome file here -->
     <link rel="stylesheet" href="./styles/font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- TODO: Include Google Fonts file here -->
@@ -20,11 +18,11 @@
     <!-- <i class="fa fa-camera-retro"></i> fa-camera-retro -->
     <header >
         <div>
-            <div id="name">
+            <div id="blogSite">
                 ScriBBler
             <span style="float:right;" >
-                <button class="header-buttons">Sign Up</button>
-                <button class="header-buttons">Sign In</button>
+                <button class="header-buttons" id="signUp">Sign Up</button>
+                <button class="header-buttons" id="signIn">Sign In</button>                
             </span>
             </div>
         </div>
@@ -33,11 +31,40 @@
                 Explore, Imagine, Create
             </div>
         </div>
+
+<!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div id="getStarted"> Get Started 
+                <span style="float:right;" class="close">
+                <i class="fa fa-times" aria-hidden="true"></i>        
+                </span>
+                <hr font-family: sans-serif; font-size: 10px;>
+            </div>                
+                <form>
+                    <label for="Name" class="label-text">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                    <label for="Username" class="label-text">Username</label>
+                    <input type="text" id="Username" placeholder="Enter your username" required>
+                    <label for="password" class="label-text">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                    <label for="ConfirmPassword" class="label-text">Password</label>
+                    <input type="password" id="ConfirmPassword" placeholder="Re-enter your passwrd" required>
+                    <button type="submit" id="signup-btn">Sign Up</button>
+                </form>
+            </div>
+        </div>
+
     </header>
         <form>
-            <button class="body-buttons">All Posts</button>
-            <button class="body-buttons">Create Post</button>
+            <div id="container">
+                <button class="body-buttons">All Posts</button>
+                <button class="body-buttons">Create Post</button>
+            </div>
         </form>
+
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>
