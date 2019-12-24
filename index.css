@@ -1,0 +1,29 @@
+body{
+	background-image: url('images/background.jpg') ;
+	background-repeat: no-repeat;
+	background-size:100% 100vh;
+}
+div{
+	text-align: column;
+}
+#name {
+	    font-family: 'Montez', cursive;
+	    font-size: 35px;
+	    color:blue;
+	    text-align: left;
+}
+#sub-Heading {
+	font-family: 'sans-serif', cursive;
+	text-align: left;
+}
+.header-buttons{
+	background-color: blue;
+	color:white;
+	padding:10px 20px;
+	margin-left: 10px;
+	font-family: sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: right;
+}
+
