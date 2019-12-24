@@ -1,7 +1,7 @@
 body{
 	background-image: url('../images/background.jpg') ;
-	background-repeat: no-repeat;
-	background-size:100% 100vh;
+	background-repeat: no-repeat;	
+	background-size: cover;
 }
 div{
 	text-align: column;
@@ -19,34 +19,35 @@ div{
 .header-buttons{
 	background-color: blue;
 	color:white;
-	padding:7px 15px;
+	padding:10px 20px;
 	margin-left: 3px;
 	font-family: sans-serif;
-	font-size: 10px;
+	font-size: 15px;
 	text-align: right;
 	cursor: pointer;
 }
 
 form{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 }
 
 #container{
 	height:100vh;
+	display: flex;
+	justify-content: center;
 }
 
 .body-buttons{
 	background-color: #dfc120;
 	color:black;
-	padding:5px 5px;
-	margin-top: 50%;
-	margin-left: 10px;
+	padding:10px 10px;
+	margin-top: 100%;
 	font-family: sans-serif;
-	font-size: 10px;
+	font-size: 15px;
 	text-align: center;
-	width: 75px;
+	width: 150px;
 	cursor: pointer;
 }
 
@@ -97,12 +98,6 @@ form{
 	font-family: sans-serif;
 	font-size: 15px;
 }
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
 
 input {
     padding: 10px;
