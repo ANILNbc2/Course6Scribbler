@@ -1,11 +1,9 @@
-header{
-	height: 25vh;
-}
 body{
-	background-color: #ffeedd;
-	height: 80vh;
+	background-color: #ffeedd; 
 }
-
+div{
+	text-align: column;
+}
 #blogSite {
 	    font-family: 'Montez', cursive;
 	    font-size: 35px;
@@ -16,7 +14,6 @@ body{
 	font-family: 'sans-serif', cursive;
 	text-align: left;
 }
-
 .header-buttons{
 	background-color: blue;
 	color:white;
@@ -28,137 +25,105 @@ body{
 	cursor: pointer;
 }
 
-#container{
+#canvas{
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	flex-wrap: wrap;
-	justify-content: center;
+	width:100%;
+	height:80%;
+	margin-top: 5%;
+	align-content: center;
 }
 
-.post {
+.box{
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	background: #FFEEDE;
-	width: 40%;
-	height : 30vh;
-	margin: 5vh;
+	width:40%;
+	height:18vh;
+	margin:2%;
+	text-align: center;
+
 }
 
-.author{
+.authorBlock{
+	display:flex;
 	background-color: white;
-	color:#a0a0a0;
+	color:#666666;
 	justify-content: center;
-	padding: 5vh 2vh;
-	width: 15%;
-	border-bottom-left-radius: 25px;
+	width:30%;
+	align-items: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
     border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px; 
+    font-weight: bolder;
+    box-shadow: 1px 1px 5px 1px #888888;
 }
 
-.heading{
-	display: flex;
-	flex-direction: row; 
-	width:100%;
-	height: 20%;
+.contentBlock{
+	display:flex;
+	flex-direction: column;
+	background-color: #E8E8E8;;
+	width:80%;
+	height:18vh;
+	border-top-right-radius: 25px; 
+    border-bottom-right-radius: 25px; 
+    box-shadow: 1px 1px 5px 1px #888888;
 }
 
-.heading-title{
+.contentHeader{
 	color:#7b7b7b;
-	padding: 0 5vh;
-	font-size: 15px;
-	width: 90%;
+	font-weight: bolder;
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	height:3vh;
+}
+
+.contentTitle{
+	display: flex;
+	width:80%;
+	justify-content: center
 }
 
 .trash-btn{
-	padding-top: 3vh;
+	padding-top: 5%;
 	color: #aaaaaa;
 	float: right;
 	font-size: 15px;
-	font-weight: bold;
-	width:10%;
-	cursor: pointer;	
+	font-weight: bolder;
+	width:20%;
+	cursor: pointer;
+}
+
+.contentBody{		
+	height:11vh;
+	line-height: 3vh;
+	font-size: 18px;
+	overflow: hidden;
+	justify-content: space-evenly;
+	width: 85%;
+
+}
+
+.contentFooter{
+	color:#7b7b7b;
+	font-weight: bolder;
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	height:2vh;
 }
 
 .ellipsis-btn{
 	justify-content: right;
 	width:90%;
-	height: 5vh;
 	color: #aaaaaa;
 	font-size: 15px;
 	font-weight: bold;
 	cursor: pointer;	
 	text-align: right;
+	padding-top: 1vh;
 }
-
-.content-body{
-	padding: 0 5vh;
-	height: 12vh;
-	line-height: 4vh;
-	overflow: hidden;
-}
-
-.content{
-	display:flex;
-	flex-direction: column;
-	background-color: #E8E8E8;
-	width: 80%;
-	border-bottom-right-radius: 25px;
-    border-top-right-radius: 25px;
-}
-
-.deleteModal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  /*overflow: auto;  Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-.delete-modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#modelHeading{
-	text-align: center;
-	margin-bottom: 5%; 
-}
-
-#modelButtons{
-	display:flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
-#yes-btn {
-	align-content: left;
-    background-color: green;
-    color:white;
-    border: none;
-    font-size: 15px;
-    padding: 5px 20px;
-    cursor: pointer;
-}
-
-#no-btn {
-	align-content: right;
-    background-color: red;
-    color:white;
-    border: none;
-    font-size: 15px;
-    cursor: pointer;
-    padding: 5px 20px; 
-}
-
