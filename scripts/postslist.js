@@ -84,7 +84,8 @@ function showCards(shouldRun){
 		                    '<p>'+contentBody[i] + '</p>' +
 		                '</div>' +
 		                '<div class="contentFooter">' +
-		                    '<span class="ellipsis-btn">' +
+		                    '<span class="ellipsis-btn" id=ellipsis-btn'+i +'" '+
+		                    'onClick ="window.location.href = \'../html/posts.html\';">' +
 		                        '<i class="fa fa-ellipsis-h" aria-hidden="true"></i>' +
 		                    '</span>' +
 		                '</div>' +
@@ -94,7 +95,6 @@ function showCards(shouldRun){
 		    document.getElementById("showCards").innerHTML += boxTemplate;
 		}
 	}
-
 }
 
 function postClickShowCard(){
@@ -119,7 +119,8 @@ function postClickShowCard(){
 	                    '<p>'+contentBody[i] + '</p>' +
 	                '</div>' +
 	                '<div class="contentFooter">' +
-	                    '<span class="ellipsis-btn">' +
+	                    '<span class="ellipsis-btn" id=ellipsis-btn'+i +'" '+
+	                    'onClick ="window.location.href = \'../html/posts.html\';">' +
 	                        '<i class="fa fa-ellipsis-h" aria-hidden="true"></i>' +
 	                    '</span>' +
 	                '</div>' +
@@ -129,6 +130,8 @@ function postClickShowCard(){
 	    document.getElementById("showCards").innerHTML += boxTemplate;
 	}	
 }
+
+// <button class="body-buttons" id="allPosts" onclick="window.location.href = './html/postslist.html';">All Posts</button>
 
 function onClickFun(index){
 	var delTemplate = '<div id="deleteModal">' +
