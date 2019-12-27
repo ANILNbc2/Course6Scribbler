@@ -1,3 +1,8 @@
+var postId = ["postId-1",
+"postId-2",
+"postId-3",
+"postId-4",
+"postId-5"];
 var authorName = ["Srishti Gupta", 
 "Colby Fayock",
 "Yazeed Bzadough",
@@ -67,7 +72,7 @@ function showCards(shouldRun){
 		for(var i=0;i < authorName.length; i++){
 
 			var boxTemplate = 
-			'<div class="box">' +
+			'<div class="box" id = "' + postId[i]+'">' +
 		            '<div class="authorBlock">' +
 		                '<p>'+authorName[i]+'</p>' +
 		            '</div>' +
@@ -85,7 +90,7 @@ function showCards(shouldRun){
 		                '</div>' +
 		                '<div class="contentFooter">' +
 		                    '<span class="ellipsis-btn" id=ellipsis-btn'+i +'" '+
-		                    'onClick ="window.location.href = \'../html/posts.html\';">' +
+		                    'onClick ="window.location.href = \'../html/posts.html\'; createPageFun(postId['+i+'])">' +
 		                        '<i class="fa fa-ellipsis-h" aria-hidden="true"></i>' +
 		                    '</span>' +
 		                '</div>' +
@@ -102,7 +107,7 @@ function postClickShowCard(){
 	for(var i=0;i < authorName.length; i++){
 
 		var boxTemplate = 
-		'<div class="box">' +
+		'<div class="box" id = "'+ postId[i] +'">' +
 	            '<div class="authorBlock">' +
 	                '<p>'+authorName[i]+'</p>' +
 	            '</div>' +
@@ -120,7 +125,7 @@ function postClickShowCard(){
 	                '</div>' +
 	                '<div class="contentFooter">' +
 	                    '<span class="ellipsis-btn" id=ellipsis-btn'+i +'" '+
-	                    'onClick ="window.location.href = \'../html/posts.html\';">' +
+	                    'onClick ="window.location.href = \'../html/posts.html\'; createPageFun(postId['+i+'])">' +
 	                        '<i class="fa fa-ellipsis-h" aria-hidden="true"></i>' +
 	                    '</span>' +
 	                '</div>' +
@@ -152,7 +157,9 @@ function onClickFun(index){
 }
 
 function yesClicked(index){	
+
 	deleteModal.style.display = "none";
+	postId.splice(index,1);
 	authorName.splice(index,1);
 	contentTitle.splice(index,1);
 	contentBody.splice(index,1);	
@@ -164,3 +171,6 @@ function noClicked(){
 	deleteModal.style.display = "none";
 	postClickShowCard();
 }
+
+
+

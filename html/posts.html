@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home Page </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/posts.css"/>
+    <!-- TODO: Include Font Awesome file here -->
+    <link rel="stylesheet" href="../styles/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!-- TODO: Include Google Fonts file here -->
+    <link href='https://fonts.googleapis.com/css?family=Montez' rel='stylesheet'>
+
+</head>
+
+<body 
+    <!-- TODO: Include code for header here -->
+    <header>
+            <div>
+                <div id="blogSite">
+                    ScriBBler
+                <span style="float:right;" >
+                    <button class="header-buttons" id="signUp">Sign Up</button>
+                    <button class="header-buttons" id="signIn">Sign In</button>                
+                </span>
+                </div>
+            </div>
+            <div>
+                <div id="sub-Heading">
+                    Explore, Imagine, Create
+                </div>
+            </div>
+            <div id="signUpModal" class="signUpModal">
+            <!-- Modal content -->
+            <div class="signUp-modal-content">
+                <div id="modelHeading"> Get Started 
+                    <span style="float:right;" class="close">
+                    <i class="fa fa-times" aria-hidden="true"></i>        
+                    </span>
+                    <hr font-family: sans-serif; font-size: 10px;>
+                </div>                
+                <form>
+                    <label for="Name" class="label-text">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                    <label for="Username" class="label-text">Username</label>
+                    <input type="text" id="Username" placeholder="Enter your username" required>
+                    <label for="password" class="label-text">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                    <label for="ConfirmPassword" class="label-text">Password</label>
+                    <input type="password" id="ConfirmPassword" placeholder="Re-enter your passwrd" required>
+                    <button type="submit" id="signup-btn">Sign Up</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="signInModal" class="signInModal">
+            <div class="signIn-modal-content">
+                <div id="modelHeading"> Welcome Back! 
+                    <span style="float:right;" class="close">
+                        <i class="fa fa-times" aria-hidden="true"></i>        
+                    </span>
+                    <hr font-family: sans-serif; font-size: 10px;>
+                </div>
+                <form>
+                    <label for="Username" class="label-text">Username</label>
+                    <input type="text" id="Username" placeholder="Enter your username" required>
+                    <label for="password" class="label-text">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                    <button type="submit" id="signin-btn">Sign In</button>                    
+                </form>
+            </div>
+        </div>
+    </header>
+    
+    <section class="canvas" >         
+        <textbox id="contentTitle">This is a title </textbox>
+        <div id="contentAuthor">
+            <p id="authorName"> auther Name </p>
+            <button id="editButton"> Edit </button>
+        </div>
+        <div class="textarea" contenteditable="true">
+            <p>This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box.
+            </p>
+        </div>
+        <div id="likeSection">
+            <button id="likeSectionButton"> Like</button>
+            <p id="likeSectionText">1 person liked this post </p>
+        </div>
+        <div id="commentSection">
+            <textarea id="commentArea">
+            </textarea>
+            <button id="commentButton">Comment</button>
+        </div>
+        <div>
+            <p id="commentsHeading"> All Comments</p>
+        </div>
+        <div id="allCommentsSection">
+            <div class="allComment">Comment one</div>
+            <div class="allComment">Comment two</div>
+        </div>
+    </section>
+
+
+    <script type="text/javascript" src="../scripts/posts.js"></script>    
+
+</body>
+
+</html>
