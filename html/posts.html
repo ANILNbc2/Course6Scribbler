@@ -15,7 +15,7 @@
 
 </head>
 
-<body 
+<body onload="displayCanvas(document.location.search)"> 
     <!-- TODO: Include code for header here -->
     <header>
             <div>
@@ -74,34 +74,9 @@
         </div>
     </header>
     
-    <section class="canvas" >         
-        <textbox id="contentTitle">This is a title </textbox>
-        <div id="contentAuthor">
-            <p id="authorName"> auther Name </p>
-            <button id="editButton"> Edit </button>
-        </div>
-        <div class="textarea" contenteditable="true">
-            <p>This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box This is all the text in the box.
-            </p>
-        </div>
-        <div id="likeSection">
-            <button id="likeSectionButton"> Like</button>
-            <p id="likeSectionText">1 person liked this post </p>
-        </div>
-        <div id="commentSection">
-            <textarea id="commentArea">
-            </textarea>
-            <button id="commentButton">Comment</button>
-        </div>
-        <div>
-            <p id="commentsHeading"> All Comments</p>
-        </div>
-        <div id="allCommentsSection">
-            <div class="allComment">Comment one</div>
-            <div class="allComment">Comment two</div>
-        </div>
+    <section class="canvas"  id="displayCanvas" >  
+    "Display this"       
     </section>
-
 
     <script type="text/javascript" src="../scripts/posts.js"></script>    
 

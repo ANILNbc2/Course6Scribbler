@@ -90,9 +90,9 @@ function showCards(shouldRun){
 		                '</div>' +
 		                '<div class="contentFooter">' +
 		                    '<span class="ellipsis-btn" id=ellipsis-btn'+i +'" '+
-		                    'onClick ="window.location.href = \'../html/posts.html\'; createPageFun(postId['+i+'])">' +
-		                        '<i class="fa fa-ellipsis-h" aria-hidden="true"></i>' +
-		                    '</span>' +
+	                     'onClick ="window.location.href = \'../html/posts.html?index='+i+'\';">'+
+	                        '<i class="fa fa-ellipsis-h" aria-hidden="true"></i>' +
+	                    '</span>' +
 		                '</div>' +
 		            '</div>' +
 		        '</div>';
@@ -125,7 +125,7 @@ function postClickShowCard(){
 	                '</div>' +
 	                '<div class="contentFooter">' +
 	                    '<span class="ellipsis-btn" id=ellipsis-btn'+i +'" '+
-	                    'onClick ="window.location.href = \'../html/posts.html\'; createPageFun(postId['+i+'])">' +
+	                     'onClick ="window.location.href = \'../html/posts.html?index='+i+'\';">'+
 	                        '<i class="fa fa-ellipsis-h" aria-hidden="true"></i>' +
 	                    '</span>' +
 	                '</div>' +
