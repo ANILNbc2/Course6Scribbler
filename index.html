@@ -17,6 +17,8 @@
 <body>
     <!-- TODO: Include all your code for the header and home page here -->
     <!-- <i class="fa fa-camera-retro"></i> fa-camera-retro -->
+
+    <!-- Design header. Use script and style from common.js and common.css -->
     <header >
         <div>
             <div id="blogSite">
@@ -34,6 +36,7 @@
         </div>
 
 <!-- The Modal -->
+        <!-- Design the model which pops up with signUP -->
         <div id="signUpModal" class="signUpModal">
             <!-- Modal content -->
             <div class="signUp-modal-content">
@@ -56,7 +59,7 @@
                 </form>
             </div>
         </div>
-
+        <!-- Design the model which pops up with signIN -->
         <div id="signInModal" class="signInModal">
             <div class="signIn-modal-content">
                 <div id="modelHeading"> Welcome Back! 
@@ -75,6 +78,8 @@
             </div>
         </div>
     </header>
+
+    <!-- Design buttons for All posts and create posts assign a link AllPost butoon to Display all post -->
     <div id="container">
         <span>
             <button class="body-buttons" id="allPosts" onclick="window.location.href = './html/postslist.html';">All Posts</button>
@@ -82,6 +87,7 @@
         </span>
     </div>
 
+    <!-- Attach model to CreateButton -->
     <div id="createPostModal" class="createPostModal">
         <div class="createPost-modal-content">
             <div id="modelHeading"> Pen Your Post 
@@ -102,6 +108,7 @@
         </div>
     </div>
 
+    <!-- Add scripts for index.js and common.js -->
     <script src="./scripts/index.js"></script>
     <script src="./scripts/common.js"></script>
 </body>

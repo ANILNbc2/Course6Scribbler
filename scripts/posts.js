@@ -1,3 +1,4 @@
+// Setup initial variables
 var postIdArr = ["postId-1",
 "postId-2",
 "postId-3",
@@ -36,11 +37,9 @@ function createPageFun(postId){
   }
 }
 
-function displayCanvas(docVal){
-  // alert("from displayCanvas : " + docVal.substring(7));
-  index = docVal.substring(7);
-  //'<input type="text"  id="contentTitle" value="'+ contentTitle[index] + '" readonly></input>' +
-  //<h4 id="contentTitle" style="display: none;">'let' me be a 'const’(ant), not a ‘var’(iable)!</h4>
+// Setup canvas for user displaying details of post selected in previous page
+function displayCanvas(docVal){  
+  index = docVal.substring(7);  
   var Canvas =       
       '<h4 id="contentTitle" style="display: block;">'+ contentTitle[index] + '</h4>' +
       '<div>'+
@@ -77,8 +76,11 @@ function displayCanvas(docVal){
   var trial = document.getElementById("displayCanvas");
 }
 
+// On clicking edit or save, update screen display.
 function onEditClick(){
+  // Check if button is set to edit or save.
   if(editStatus==0){
+    // if edit is set, then update display and border for title and content 
     editStatus=1;
     var editButtonHtml ='Save <i class="fa fa-save"></i>';
     document.getElementById("editButton").innerHTML = editButtonHtml;
@@ -90,8 +92,8 @@ function onEditClick(){
 
     document.getElementById('editContent').innerHTML =       '<textarea id="contentText" rows="5" style="border-style: solid; border-color:pink" >' + contentText + '</textarea>';
   
-
   }else{
+    // if save is set, then update display and border for title and content 
     editStatus=0;
     var editButtonHtml ='Edit <i class="fa fa-edit"></i>';
     document.getElementById("editButton").innerHTML = editButtonHtml;
@@ -107,6 +109,7 @@ function onEditClick(){
   }
 }
 
+// On clicking like, update count
 function onLikeClick(){
   likeCount = likeCount + 1;
 
@@ -118,7 +121,7 @@ function onLikeClick(){
 
 }
 
-
+// On typing comment and clicking comment button, update comment.
 function onCommentClick(){
   var currentComments = document.getElementById("allCommentsSection").innerHTML;
   var newComment = document.getElementById("commentArea").value;

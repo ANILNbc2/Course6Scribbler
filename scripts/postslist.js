@@ -1,3 +1,4 @@
+// Setting up initial values
 var postId = ["postId-1",
 "postId-2",
 "postId-3",
@@ -22,6 +23,7 @@ var contentBody = ["Since JavaScript does not have any type-checking, either of 
 "Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module named xyz."
 ];
 
+// set up variable to run showCards function only once
 var shouldRun=0;
 
 
@@ -29,7 +31,7 @@ function showCards(shouldRun){
 	if(shouldRun == 1){
 		document.getElementById("showCards").innerHTML += '<div id="modalBox"> </div>';
 		for(var i=0;i < authorName.length; i++){
-
+			// Setup template for inner boxes
 			var boxTemplate = 
 			'<div class="box" id = "' + postId[i]+'">' +
 		            '<div class="authorBlock">' +
@@ -61,6 +63,7 @@ function showCards(shouldRun){
 	}
 }
 
+// Setup function for post model Click for showing cards 
 function postClickShowCard(){
 	document.getElementById("showCards").innerHTML = '<div id="modalBox"> </div>';
 	for(var i=0;i < authorName.length; i++){
@@ -95,8 +98,7 @@ function postClickShowCard(){
 	}	
 }
 
-// <button class="body-buttons" id="allPosts" onclick="window.location.href = './html/postslist.html';">All Posts</button>
-
+// Setup click function for deleteing post. Display model and check for user input
 function onClickFun(index){
 	var delTemplate = '<div id="deleteModal">' +
 	        '<div class="delete-modal-content">' +
@@ -115,6 +117,7 @@ function onClickFun(index){
 	deleteModal.style.display = "block";
 }
 
+//On clicking yes, delete the entry for corrosponding index from all arrays.
 function yesClicked(index){	
 
 	deleteModal.style.display = "none";
@@ -126,6 +129,7 @@ function yesClicked(index){
 	postClickShowCard();
 }
 
+//On clicking No, do nothing. 
 function noClicked(){
 	deleteModal.style.display = "none";
 	postClickShowCard();
